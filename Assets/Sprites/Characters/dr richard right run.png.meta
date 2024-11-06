@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dr richard right run_0: 5432805018709618529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
