@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Map Level.unity
     guid: 1a0cdf8123e82cb4b99dbcc75e0f1833
   - enabled: 1
-    path: Assets/Scenes/lv9.unity
+    path: Assets/Scenes/levels/lv9.unity
     guid: ead69d45f0c55594b9cc34562467a85f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
