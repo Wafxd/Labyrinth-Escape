@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      maze_escape-removebg-preview_0: -3978492856164749190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
