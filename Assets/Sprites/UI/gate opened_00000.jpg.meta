@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 31de40d2bfd720243be528b98f77791f
+guid: 5fcd3ebc3e9fd5b40a631b220ac3e38f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4551039141307083111
-    second: gate_00000_0
+      213: -3118234139417533006
+    second: gate opened_00000_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,199 +126,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gate_00000_0
+      name: gate opened_00000_0
       rect:
         serializedVersion: 2
         x: 14
-        y: 110
+        y: 113
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9a2404fbcfa49c34a97a6315a70aa1fb
-      internalID: -1404969607
+      spriteID: 2b5a581429ec9b4d0800000000000000
+      internalID: -3118234139417533006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_1
+      name: gate opened_00000_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 110
+        y: 113
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2403ef98bbd3d264ba8599f98ee30eb2
-      internalID: -2085135002
+      spriteID: 5dd5da6fd8f2c63419e190d30e2fb3a3
+      internalID: -893084935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_2
+      name: gate opened_00000_2
       rect:
         serializedVersion: 2
         x: 114
-        y: 110
+        y: 113
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3d044a5dd306fa47a64e46e4590bfc7
-      internalID: -763874836
+      spriteID: 1b2a6851b3576154e9190c08b45f37ca
+      internalID: -760959589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_3
+      name: gate opened_00000_3
       rect:
         serializedVersion: 2
         x: 14
-        y: 60
+        y: 63
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54bdd1c64c88e234fb92df3526c8e813
-      internalID: -1449896380
+      spriteID: 01d837a9b293dd942b1fc3a7271df1db
+      internalID: 1507264475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_4
+      name: gate opened_00000_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 60
+        y: 63
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3069dc02ec57f642b41dbca50c1f392
-      internalID: -1298637082
+      spriteID: b38c5343fa14fef4f858a5b128f62e18
+      internalID: 1076566673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_5
+      name: gate opened_00000_5
       rect:
         serializedVersion: 2
         x: 114
-        y: 60
+        y: 63
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169a16c263c1b254f9238867cf5dfa00
-      internalID: -910230148
+      spriteID: 5fd2128c61aaaad408e9bbf7db899217
+      internalID: 523174722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_6
+      name: gate opened_00000_6
       rect:
         serializedVersion: 2
         x: 14
-        y: 10
+        y: 13
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30406f37e3309914abeb66212b94566a
-      internalID: 708541633
+      spriteID: a718d5bcf20067d4e9e4125f28da2206
+      internalID: -1905159623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_7
+      name: gate opened_00000_7
       rect:
         serializedVersion: 2
         x: 64
-        y: 10
+        y: 13
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfe33618b2358234d83b3334eb2eaffb
-      internalID: -1096285531
+      spriteID: 3f9a5c2963084714eb54a00fa3f2072b
+      internalID: -1024888947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_8
+      name: gate opened_00000_8
       rect:
         serializedVersion: 2
         x: 114
-        y: 10
+        y: 13
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 936e16bb60f39c2498d98b35537a608a
-      internalID: 1599748995
+      spriteID: 759596aedee562d47b9e2b9f057f3eb6
+      internalID: -508301707
       vertices: []
       indices: 
       edges: []
@@ -327,7 +327,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0bce3b8d8de7c6549a1949e4166b96b1
+    spriteID: 10509d70ee82e734494e9381b425296e
     internalID: 0
     vertices: []
     indices: 
@@ -337,15 +337,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gate_00000_0: -1404969607
-      gate_00000_1: -2085135002
-      gate_00000_2: -763874836
-      gate_00000_3: -1449896380
-      gate_00000_4: -1298637082
-      gate_00000_5: -910230148
-      gate_00000_6: 708541633
-      gate_00000_7: -1096285531
-      gate_00000_8: 1599748995
+      gate opened_00000_0: -3118234139417533006
+      gate opened_00000_1: -893084935
+      gate opened_00000_2: -760959589
+      gate opened_00000_3: 1507264475
+      gate opened_00000_4: 1076566673
+      gate opened_00000_5: 523174722
+      gate opened_00000_6: -1905159623
+      gate opened_00000_7: -1024888947
+      gate opened_00000_8: -508301707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

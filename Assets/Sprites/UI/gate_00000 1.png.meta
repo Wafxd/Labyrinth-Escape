@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 31de40d2bfd720243be528b98f77791f
+guid: 54231ae39c067ed43b66eb6ae38ad0e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4551039141307083111
-    second: gate_00000_0
+      213: -3432248998199970333
+    second: gate_00000 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gate_00000_0
+      name: gate_00000 1_0
       rect:
         serializedVersion: 2
         x: 14
@@ -139,16 +139,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9a2404fbcfa49c34a97a6315a70aa1fb
-      internalID: -1404969607
+      spriteID: 3e5b99198b33e50d0800000000000000
+      internalID: -3432248998199970333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_1
+      name: gate_00000 1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2403ef98bbd3d264ba8599f98ee30eb2
-      internalID: -2085135002
+      spriteID: 4abced1a27a21694a89518e1b3d7e9d4
+      internalID: -155080145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_2
+      name: gate_00000 1_2
       rect:
         serializedVersion: 2
         x: 114
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3d044a5dd306fa47a64e46e4590bfc7
-      internalID: -763874836
+      spriteID: 67c7c0d0344afae4f831b9b5025de2b5
+      internalID: 1209843134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_3
+      name: gate_00000 1_3
       rect:
         serializedVersion: 2
         x: 14
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54bdd1c64c88e234fb92df3526c8e813
-      internalID: -1449896380
+      spriteID: c6d11a4f69cebde46a5a81b0c4176803
+      internalID: -968228552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_4
+      name: gate_00000 1_4
       rect:
         serializedVersion: 2
         x: 64
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3069dc02ec57f642b41dbca50c1f392
-      internalID: -1298637082
+      spriteID: 2a60144b3d028924dbe671ca71a7d45c
+      internalID: 1654656479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_5
+      name: gate_00000 1_5
       rect:
         serializedVersion: 2
         x: 114
@@ -251,14 +251,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169a16c263c1b254f9238867cf5dfa00
-      internalID: -910230148
+      spriteID: b5d96d2215f95ac4abc0190db76c2da9
+      internalID: 62207143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_6
+      name: gate_00000 1_6
       rect:
         serializedVersion: 2
         x: 14
@@ -273,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30406f37e3309914abeb66212b94566a
-      internalID: 708541633
+      spriteID: 35929496060214041bdf7a0b0a0e6377
+      internalID: -1511351886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_7
+      name: gate_00000 1_7
       rect:
         serializedVersion: 2
         x: 64
@@ -295,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfe33618b2358234d83b3334eb2eaffb
-      internalID: -1096285531
+      spriteID: be1ae8c1b9c1d5449933986b9a756313
+      internalID: 1906288624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_8
+      name: gate_00000 1_8
       rect:
         serializedVersion: 2
         x: 114
@@ -317,8 +317,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 936e16bb60f39c2498d98b35537a608a
-      internalID: 1599748995
+      spriteID: 514586435be3c2049a8e0b5a4d889405
+      internalID: -1411291635
       vertices: []
       indices: 
       edges: []
@@ -327,7 +327,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0bce3b8d8de7c6549a1949e4166b96b1
+    spriteID: a8620da5707bbda4bae64cf4f8bc3be1
     internalID: 0
     vertices: []
     indices: 
@@ -337,15 +337,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gate_00000_0: -1404969607
-      gate_00000_1: -2085135002
-      gate_00000_2: -763874836
-      gate_00000_3: -1449896380
-      gate_00000_4: -1298637082
-      gate_00000_5: -910230148
-      gate_00000_6: 708541633
-      gate_00000_7: -1096285531
-      gate_00000_8: 1599748995
+      gate_00000 1_0: -3432248998199970333
+      gate_00000 1_1: -155080145
+      gate_00000 1_2: 1209843134
+      gate_00000 1_3: -968228552
+      gate_00000 1_4: 1654656479
+      gate_00000 1_5: 62207143
+      gate_00000 1_6: -1511351886
+      gate_00000 1_7: 1906288624
+      gate_00000 1_8: -1411291635
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

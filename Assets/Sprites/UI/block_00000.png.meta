@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 31de40d2bfd720243be528b98f77791f
+guid: 0295c447e24baa3448c0fc41c225eebc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4551039141307083111
-    second: gate_00000_0
+      213: -1634714652696376943
+    second: block_00000_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,11 +126,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gate_00000_0
+      name: block_00000_0
       rect:
         serializedVersion: 2
         x: 14
-        y: 110
+        y: 123
         width: 50
         height: 50
       alignment: 0
@@ -141,18 +141,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a2404fbcfa49c34a97a6315a70aa1fb
-      internalID: -1404969607
+      spriteID: 0692fb6ec11359b44beddf47a3c4c703
+      internalID: 1700189730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_1
+      name: block_00000_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 110
+        y: 123
         width: 50
         height: 50
       alignment: 0
@@ -163,18 +163,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2403ef98bbd3d264ba8599f98ee30eb2
-      internalID: -2085135002
+      spriteID: aac39789557198e4c8bb9d6eb581ea2a
+      internalID: 976429312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_2
+      name: block_00000_2
       rect:
         serializedVersion: 2
         x: 114
-        y: 110
+        y: 123
         width: 50
         height: 50
       alignment: 0
@@ -185,18 +185,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3d044a5dd306fa47a64e46e4590bfc7
-      internalID: -763874836
+      spriteID: e31800426ca144447a8227c25c13bf50
+      internalID: -1061119138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_3
+      name: block_00000_3
       rect:
         serializedVersion: 2
         x: 14
-        y: 60
+        y: 73
         width: 50
         height: 50
       alignment: 0
@@ -207,18 +207,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54bdd1c64c88e234fb92df3526c8e813
-      internalID: -1449896380
+      spriteID: 3c1132eedb95695409d4269b88d8df1c
+      internalID: 768002834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_4
+      name: block_00000_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 60
+        y: 73
         width: 50
         height: 50
       alignment: 0
@@ -229,18 +229,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3069dc02ec57f642b41dbca50c1f392
-      internalID: -1298637082
+      spriteID: 9ab0074cae3822a42a10cce91107d465
+      internalID: -146785268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_5
+      name: block_00000_5
       rect:
         serializedVersion: 2
         x: 114
-        y: 60
+        y: 73
         width: 50
         height: 50
       alignment: 0
@@ -251,18 +251,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169a16c263c1b254f9238867cf5dfa00
-      internalID: -910230148
+      spriteID: 84f4af1ed7eee564ba8a38507a20a4c1
+      internalID: -2014639339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_6
+      name: block_00000_6
       rect:
         serializedVersion: 2
         x: 14
-        y: 10
+        y: 23
         width: 50
         height: 50
       alignment: 0
@@ -273,18 +273,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30406f37e3309914abeb66212b94566a
-      internalID: 708541633
+      spriteID: 5ea491cff2da1c3408f093ecf9df8ff3
+      internalID: -1965662175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_7
+      name: block_00000_7
       rect:
         serializedVersion: 2
         x: 64
-        y: 10
+        y: 23
         width: 50
         height: 50
       alignment: 0
@@ -295,18 +295,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfe33618b2358234d83b3334eb2eaffb
-      internalID: -1096285531
+      spriteID: 506adcbcb9bcab74a87e205046f41bee
+      internalID: -1412674468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gate_00000_8
+      name: block_00000_8
       rect:
         serializedVersion: 2
         x: 114
-        y: 10
+        y: 23
         width: 50
         height: 50
       alignment: 0
@@ -317,8 +317,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 936e16bb60f39c2498d98b35537a608a
-      internalID: 1599748995
+      spriteID: 9de73a5d4ef039442b6fd4f18bec43a1
+      internalID: -300233621
       vertices: []
       indices: 
       edges: []
@@ -327,7 +327,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0bce3b8d8de7c6549a1949e4166b96b1
+    spriteID: e846eaa1df76ae447b60e0405f8b3ab4
     internalID: 0
     vertices: []
     indices: 
@@ -337,15 +337,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gate_00000_0: -1404969607
-      gate_00000_1: -2085135002
-      gate_00000_2: -763874836
-      gate_00000_3: -1449896380
-      gate_00000_4: -1298637082
-      gate_00000_5: -910230148
-      gate_00000_6: 708541633
-      gate_00000_7: -1096285531
-      gate_00000_8: 1599748995
+      block_00000_0: 1700189730
+      block_00000_1: 976429312
+      block_00000_2: -1061119138
+      block_00000_3: 768002834
+      block_00000_4: -146785268
+      block_00000_5: -2014639339
+      block_00000_6: -1965662175
+      block_00000_7: -1412674468
+      block_00000_8: -300233621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
