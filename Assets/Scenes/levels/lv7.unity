@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fec615abbc88d74eafda6c41a6fbff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1219041744}
   isPickedUp: 0
   smoothTime: 0.2
   pickupRange: 2
@@ -481,7 +481,7 @@ Transform:
   m_GameObject: {fileID: 1041472857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: -4.68, z: 0}
+  m_LocalPosition: {x: -8, y: 3.69, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -11779,7 +11779,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 245810397
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8741313912280444350, guid: bb151871fa34c1c418cee291713a99f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11818,7 +11818,6 @@ GameObject:
   - component: {fileID: 1279314138}
   - component: {fileID: 1279314137}
   - component: {fileID: 1279314136}
-  - component: {fileID: 1279314135}
   - component: {fileID: 1279314134}
   m_Layer: 0
   m_Name: CinemachineCamera
@@ -11847,35 +11846,6 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
---- !u!114 &1279314135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279314133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38bda98361e1de48a4ca2bd86ea3c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Composition:
-    ScreenPosition: {x: 0, y: 0}
-    DeadZone:
-      Enabled: 0
-      Size: {x: 0.2, y: 0.2}
-    HardLimits:
-      Enabled: 0
-      Size: {x: 0.8, y: 0.8}
-      Offset: {x: 0, y: 0}
-  CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
-  Damping: {x: 0.5, y: 0.5}
-  Lookahead:
-    Enabled: 0
-    Time: 0
-    Smoothing: 0
-    IgnoreY: 0
 --- !u!114 &1279314136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12036,7 +12006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
-  player: {fileID: 0}
+  player: {fileID: 1219041744}
 --- !u!61 &1400839337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12146,13 +12116,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400839333}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 6.55, z: 0}
+  m_LocalRotation: {x: 0.39818883, y: 0, z: 0, w: 0.9173035}
+  m_LocalPosition: {x: 21.93, y: 14.71, z: 0}
   m_LocalScale: {x: 1.7299999, y: 1.7299999, z: 1.7299999}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 46.93, y: 0, z: 0}
 --- !u!1 &1480841269
 GameObject:
   m_ObjectHideFlags: 0
@@ -42512,7 +42482,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000affd42d39105a884ddc4a60e3181f357
+  m_ApplyToSortingLayers: 000000009105a884affd42d3ddc4a60e3181f357cddf2a67
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
