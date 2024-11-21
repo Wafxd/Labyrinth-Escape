@@ -3,28 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class door : MonoBehaviour
 {
     public bool locked;
     private Animator anim;
 
     [SerializeField] GameObject player;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         anim = GetComponent<Animator>();
         locked = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float distance = Vector2.Distance(player.transform.position, transform.position);
-        if(!locked && distance < 0.5f)
+        if (!locked && distance < 0.5f)
         {
-            SceneManager.LoadScene(3);
-            
+            // Load scene berikutnya berdasarkan index scene aktif
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex + 1); // Load scene berikutnya
         }
     }
 
