@@ -12,8 +12,35 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu/Map Level.unity
     guid: 1a0cdf8123e82cb4b99dbcc75e0f1833
   - enabled: 1
+    path: Assets/Scenes/levels/lv1.unity
+    guid: bcaaa41fb873f3b479eaed135a6b35f7
+  - enabled: 1
+    path: Assets/Scenes/levels/lv2.unity
+    guid: b346282846309a947bb6c3238e1f4242
+  - enabled: 1
+    path: Assets/Scenes/levels/lv3.unity
+    guid: 9baf8244ce8116d4588e5e80a5645128
+  - enabled: 1
+    path: Assets/Scenes/levels/lv4.unity
+    guid: f202110e680b7a049a8b023487d4a0e8
+  - enabled: 1
+    path: Assets/Scenes/levels/lv5.unity
+    guid: 17f443651bcbf9d4a890d76c7da81212
+  - enabled: 1
+    path: Assets/Scenes/levels/lv6.unity
+    guid: e4ff00639405e45409f7cc1263ffbd24
+  - enabled: 1
+    path: Assets/Scenes/levels/lv7.unity
+    guid: 8cf1df0ce0d61084ebb116507ff81d12
+  - enabled: 1
+    path: Assets/Scenes/levels/lv8.unity
+    guid: af13117543bc6024482ac445a273c83c
+  - enabled: 1
     path: Assets/Scenes/levels/lv9.unity
     guid: ead69d45f0c55594b9cc34562467a85f
+  - enabled: 1
+    path: Assets/Scenes/levels/lv10.unity
+    guid: 1e1057c417948ed40a3a0e9fed17c393
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
