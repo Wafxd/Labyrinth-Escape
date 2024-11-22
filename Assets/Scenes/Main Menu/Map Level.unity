@@ -275,7 +275,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 22689627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &22689627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +671,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 691985014}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &691985014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,7 +882,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 752651982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv7
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &752651982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,7 +1014,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 870320999}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &870320999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,7 +1259,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1146864619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv6
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1146864619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1331,7 +1391,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1734993067}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv5
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1734993067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,7 +1523,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1838034734}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv8
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1838034734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1571,7 +1655,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1913868178}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv10
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1913868178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1691,7 +1787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2063755292}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078709525}
+        m_TargetAssemblyTypeName: MapLevel, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: lv4
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2063755292
 MonoBehaviour:
   m_ObjectHideFlags: 0
