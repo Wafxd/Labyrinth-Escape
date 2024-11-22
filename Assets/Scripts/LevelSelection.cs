@@ -13,11 +13,8 @@ public class LevelSelection : MonoBehaviour
         // Mengatur tombol level berdasarkan progres level yang terbuka
         for (int i = 0; i < lvlButtons.Length; i++)
         {
-            // Nonaktifkan tombol level jika indeks tombol lebih besar atau sama dengan progres level
-            if (i + 1 > levelAt)
-            {
-                lvlButtons[i].interactable = false; // Nonaktifkan tombol yang belum terbuka
-            }
+            lvlButtons[i].interactable = (i + 1 <= levelAt); // Hanya buka hingga level 'levelAt'
         }
     }
+
 }
