@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class door : MonoBehaviour
+public class Door : MonoBehaviour
 {
     public bool locked;
     private Animator anim;
@@ -21,11 +21,20 @@ public class door : MonoBehaviour
         float distance = Vector2.Distance(player.transform.position, transform.position);
         if (!locked && distance < 0.5f)
         {
-            // Load scene berikutnya berdasarkan index scene aktif
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentSceneIndex + 1); // Load scene berikutnya
+            
+            if (currentSceneIndex < SceneManager.sceneCountInBuildSettings - 1) // Cek apakah belum di level terakhir
+            {
+                SceneManager.LoadScene(currentSceneIndex + 1); // Load scene berikutnya
+            }
+            else
+            {
+                // Jika level terakhir, load Main Menu
+                SceneManager.LoadScene("Main Menu"); // Ganti dengan nama scene main menu
+            }
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
