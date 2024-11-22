@@ -33,7 +33,7 @@ public class Door : MonoBehaviour
             else
             {
                 // Jika level terakhir, reset level kecuali level 1
-                ResetLevels();
+                // ResetLevels();
                 SceneManager.LoadScene("Main Menu"); // Ganti dengan nama scene main menu
             }
         }
