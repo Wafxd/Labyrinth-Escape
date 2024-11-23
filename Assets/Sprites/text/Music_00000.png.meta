@@ -144,130 +144,20 @@ TextureImporter:
       name: Music_00000_0
       rect:
         serializedVersion: 2
-        x: 111
-        y: 153
-        width: 219
-        height: 188
+        x: 0
+        y: 0
+        width: 1080
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9341697aca4e17b00800000000000000
-      internalID: 824691636982649913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Music_00000_1
-      rect:
-        serializedVersion: 2
-        x: 661
-        y: 308
-        width: 50
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 66961ee99e205b990800000000000000
-      internalID: -7370982012705740442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Music_00000_2
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 150
-        width: 150
-        height: 146
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fd785981ff316ce0800000000000000
-      internalID: -1413778501393678861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Music_00000_3
-      rect:
-        serializedVersion: 2
-        x: 523
-        y: 150
-        width: 110
-        height: 149
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78e0dcb8926d932d0800000000000000
-      internalID: -3298369778144702841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Music_00000_4
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 153
-        width: 55
-        height: 143
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5883b65fef3f17df0800000000000000
-      internalID: -184097833380792187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Music_00000_5
-      rect:
-        serializedVersion: 2
-        x: 729
-        y: 150
-        width: 122
-        height: 149
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14130f8531b2bc750800000000000000
-      internalID: 6326197463668502849
+      spriteID: 36b0496dc314f4840890065d6a6d7588
+      internalID: -10067627
       vertices: []
       indices: 
       edges: []
@@ -276,7 +166,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 57a14ae228785af4ab916c7373e61d62
     internalID: 0
     vertices: []
     indices: 
@@ -285,7 +175,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Music_00000_0: -10067627
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

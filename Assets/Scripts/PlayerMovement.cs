@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int speed = 2;
     private Rigidbody2D characterBody;
     private Vector2 velocity;
     private Vector2 inputMovement;
+
+    public AudioSource footstepAudio; // Drag and drop AudioSource untuk langkah kaki
+    public AudioManager audioManager; // Reference ke AudioManager untuk mengatur volume SFX
 
     void Start()
     {
@@ -14,13 +16,31 @@ public class PlayerMovement : MonoBehaviour
         characterBody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        inputMovement = new Vector2 (
+        inputMovement = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
         );
+
+        // Periksa jika player bergerak dan mainkan suara langkah kaki
+        if (inputMovement.magnitude > 0)
+        {
+            if (!footstepAudio.isPlaying)
+            {
+                footstepAudio.Play(); // Mainkan suara langkah kaki
+            }
+        }
+        else
+        {
+            footstepAudio.Stop(); // Hentikan suara langkah kaki
+        }
+
+        // Sinkronkan volume langkah kaki dengan volume SFX dari AudioManager
+        if (audioManager != null && footstepAudio != null)
+        {
+            footstepAudio.volume = audioManager.GetSFXVolume();
+        }
     }
 
     private void FixedUpdate()
