@@ -12,6 +12,11 @@ public class KeyManager : MonoBehaviour
     public float pickupRange = 2f;  // Jarak untuk mengambil kunci
     private bool canPickUp = false; // Menandakan apakah kunci bisa diambil
 
+    // Tambahkan referensi untuk AudioManager dan AudioSource
+    public AudioManager audioManager;
+    public AudioSource pickUpSFX; // Drag and drop AudioSource untuk suara mengambil kunci
+    public AudioSource dropSFX; // Drag and drop AudioSource untuk suara menjatuhkan kunci
+
     // Update is called once per frame
     void Update()
     {
@@ -45,6 +50,13 @@ public class KeyManager : MonoBehaviour
                 PickUpKey();
             }
         }
+
+        // Sinkronkan volume efek suara dengan SFX volume dari AudioManager
+        if (audioManager != null)
+        {
+            if (pickUpSFX != null) pickUpSFX.volume = audioManager.GetSFXVolume();
+            if (dropSFX != null) dropSFX.volume = audioManager.GetSFXVolume();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -68,14 +80,26 @@ public class KeyManager : MonoBehaviour
     {
         isPickedUp = true;
         canPickUp = false;
+
+        // Mainkan suara mengambil kunci
+        if (pickUpSFX != null)
+        {
+            pickUpSFX.Play();
+        }
     }
 
-    // Fungsi untuk menjatuhkan kunci (sekarang hanya di tempat player)
+    // Fungsi untuk menjatuhkan kunci
     void DropKey()
     {
         isPickedUp = false;
 
-        // Pindahkan kunci ke posisi player (di tempat yang sama)
+        // Pindahkan kunci ke posisi player
         transform.position = player.transform.position;
+
+        // Mainkan suara menjatuhkan kunci
+        if (dropSFX != null)
+        {
+            dropSFX.Play();
+        }
     }
 }
