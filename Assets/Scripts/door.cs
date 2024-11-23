@@ -10,6 +10,10 @@ public class Door : MonoBehaviour
 
     [SerializeField] GameObject player;
 
+    // Tambahkan AudioSource untuk suara pintu
+    public AudioSource openDoorSFX;  // Suara pintu terbuka
+    public AudioSource closeDoorSFX; // Suara pintu tertutup
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -45,6 +49,12 @@ public class Door : MonoBehaviour
         {
             anim.SetTrigger("Open");
             locked = false;
+
+            // Mainkan suara pintu terbuka
+            if (openDoorSFX != null)
+            {
+                openDoorSFX.Play();
+            }
         }
     }
 
@@ -54,6 +64,12 @@ public class Door : MonoBehaviour
         {
             anim.SetTrigger("Closed");
             locked = true;
+
+            // Mainkan suara pintu tertutup
+            if (closeDoorSFX != null)
+            {
+                closeDoorSFX.Play();
+            }
         }
     }
 
