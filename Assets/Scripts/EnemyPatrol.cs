@@ -10,11 +10,21 @@ public class EnemyBehavior : MonoBehaviour
     private int currentPatrolIndex = 0; // Indeks titik patroli saat ini
     private bool isChasing = false; // Apakah musuh sedang mengejar pemain?
 
+    private AudioManager audioManager; // Referensi ke AudioManager
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false; // Nonaktifkan rotasi otomatis (jika 2D)
         agent.updateUpAxis = false; // Nonaktifkan rotasi sumbu atas (jika 2D)
+
+        // Referensi ke AudioManager di scene menggunakan API terbaru
+        audioManager = Object.FindFirstObjectByType<AudioManager>(); 
+
+        if (audioManager == null)
+        {
+            Debug.LogWarning("AudioManager not found in the scene. Make sure it is present.");
+        }
 
         // Set destinasi awal ke titik patroli pertama
         if (patrolPoints.Length > 0)
@@ -32,12 +42,24 @@ public class EnemyBehavior : MonoBehaviour
             // Mulai mengejar pemain
             isChasing = true;
             agent.SetDestination(Player.position);
+
+            // Mainkan musik tegang
+            if (audioManager != null)
+            {
+                audioManager.PlayTensionMusic(true);
+            }
         }
         else
         {
             // Kembali ke patroli jika pemain di luar jangkauan
             isChasing = false;
             Patrol();
+
+            // Hentikan musik tegang
+            if (audioManager != null)
+            {
+                audioManager.PlayTensionMusic(false);
+            }
         }
     }
 
