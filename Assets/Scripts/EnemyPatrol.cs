@@ -11,6 +11,7 @@ public class EnemyBehavior : MonoBehaviour
     private bool isChasing = false; // Apakah musuh sedang mengejar pemain?
 
     private AudioManager audioManager; // Referensi ke AudioManager
+    private PlayerHealth playerHealth; // Referensi ke script PlayerHealth
 
     void Start()
     {
@@ -26,9 +27,15 @@ public class EnemyBehavior : MonoBehaviour
             Debug.LogWarning("AudioManager not found in the scene. Make sure it is present.");
         }
 
-        // Set destinasi awal ke titik patroli pertama
+        // Referensi ke script PlayerHealth
+        if (Player != null)
+        {
+            playerHealth = Player.GetComponent<PlayerHealth>();
+        }
+
         if (patrolPoints.Length > 0)
         {
+            // Set destinasi awal ke titik patroli pertama
             agent.SetDestination(patrolPoints[currentPatrolIndex].position);
         }
     }
@@ -72,6 +79,18 @@ public class EnemyBehavior : MonoBehaviour
             {
                 currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
                 agent.SetDestination(patrolPoints[currentPatrolIndex].position);
+            }
+        }
+    }
+
+    // Tambahkan interaksi saat menyentuh player
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(2); // Kurangi health player sebanyak 2
             }
         }
     }

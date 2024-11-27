@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource footstepAudio; // Drag and drop AudioSource untuk langkah kaki
     public AudioManager audioManager; // Reference ke AudioManager untuk mengatur volume SFX
 
+    public PlayerHealth playerHealth; // Reference ke script PlayerHealth
+
     void Start()
     {
         velocity = new Vector2(speed, speed);
@@ -48,5 +50,14 @@ public class PlayerMovement : MonoBehaviour
         Vector2 delta = inputMovement * velocity * Time.deltaTime;
         Vector2 newPosition = characterBody.position + delta;
         characterBody.MovePosition(newPosition);
+    }
+
+    // Contoh interaksi untuk mengurangi health
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            playerHealth.TakeDamage(1);
+        }
     }
 }
