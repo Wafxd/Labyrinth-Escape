@@ -7,15 +7,36 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 velocity;
     private Vector2 inputMovement;
 
-    public AudioSource footstepAudio; // Drag and drop AudioSource untuk langkah kaki
-    public AudioManager audioManager; // Reference ke AudioManager untuk mengatur volume SFX
+    public AudioSource footstepAudio; // Audio untuk langkah kaki
+    public AudioManager audioManager; // Referensi AudioManager untuk mengatur volume SFX
 
-    public PlayerHealth playerHealth; // Reference ke script PlayerHealth
+    public PlayerHealth playerHealth; // Referensi ke PlayerHealth
 
     void Start()
     {
         velocity = new Vector2(speed, speed);
         characterBody = GetComponent<Rigidbody2D>();
+
+        // Pastikan playerHealth tidak null
+        if (playerHealth == null)
+        {
+            playerHealth = GetComponent<PlayerHealth>();
+            if (playerHealth == null)
+            {
+                Debug.LogError("PlayerHealth not found! Attach the PlayerHealth script to the Player object.");
+            }
+        }
+
+        // Log error jika AudioSource atau AudioManager tidak diatur
+        if (footstepAudio == null)
+        {
+            Debug.LogWarning("Footstep AudioSource is not assigned. No footstep sound will play.");
+        }
+
+        if (audioManager == null)
+        {
+            Debug.LogWarning("AudioManager is not assigned. SFX volume will not be synchronized.");
+        }
     }
 
     void Update()
@@ -25,23 +46,23 @@ public class PlayerMovement : MonoBehaviour
             Input.GetAxisRaw("Vertical")
         );
 
-        // Periksa jika player bergerak dan mainkan suara langkah kaki
-        if (inputMovement.magnitude > 0)
+        // Mainkan suara langkah kaki saat player bergerak
+        if (footstepAudio != null)
         {
-            if (!footstepAudio.isPlaying)
+            if (inputMovement.magnitude > 0 && !footstepAudio.isPlaying)
             {
-                footstepAudio.Play(); // Mainkan suara langkah kaki
+                footstepAudio.Play();
             }
-        }
-        else
-        {
-            footstepAudio.Stop(); // Hentikan suara langkah kaki
-        }
+            else if (inputMovement.magnitude == 0 && footstepAudio.isPlaying)
+            {
+                footstepAudio.Stop();
+            }
 
-        // Sinkronkan volume langkah kaki dengan volume SFX dari AudioManager
-        if (audioManager != null && footstepAudio != null)
-        {
-            footstepAudio.volume = audioManager.GetSFXVolume();
+            // Sinkronkan volume langkah kaki dengan volume SFX
+            if (audioManager != null)
+            {
+                footstepAudio.volume = audioManager.GetSFXVolume();
+            }
         }
     }
 
@@ -52,12 +73,18 @@ public class PlayerMovement : MonoBehaviour
         characterBody.MovePosition(newPosition);
     }
 
-    // Contoh interaksi untuk mengurangi health
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy"))
         {
-            playerHealth.TakeDamage(1);
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(1);
+            }
+            else
+            {
+                Debug.LogError("PlayerHealth is null! Cannot reduce health.");
+            }
         }
     }
 }

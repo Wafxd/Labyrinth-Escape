@@ -13,6 +13,11 @@ public class EnemyBehavior : MonoBehaviour
     private AudioManager audioManager; // Referensi ke AudioManager
     private PlayerHealth playerHealth; // Referensi ke script PlayerHealth
 
+    private float damageInterval = 2f; // Interval waktu untuk memberikan damage (dalam detik)
+    private float damageTimer = 0f; // Timer untuk menghitung waktu
+
+    private bool isPlayerInRange = false; // Apakah player sudah dalam jangkauan musuh?
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -42,11 +47,12 @@ public class EnemyBehavior : MonoBehaviour
 
     void Update()
     {
+        // Mengecek jarak musuh dengan player
         float distanceToPlayer = Vector3.Distance(transform.position, Player.position);
 
         if (distanceToPlayer <= detectionRange)
         {
-            // Mulai mengejar pemain
+            // Mulai mengejar pemain jika dalam jangkauan
             isChasing = true;
             agent.SetDestination(Player.position);
 
@@ -68,6 +74,20 @@ public class EnemyBehavior : MonoBehaviour
                 audioManager.PlayTensionMusic(false);
             }
         }
+
+        // Jika player sudah dalam jangkauan musuh, beri damage setelah interval waktu
+        if (isPlayerInRange)
+        {
+            damageTimer += Time.deltaTime;
+            if (damageTimer >= damageInterval)
+            {
+                if (playerHealth != null)
+                {
+                    playerHealth.TakeDamage(1); // Kurangi health player sebanyak 1
+                    damageTimer = 0f; // Reset timer setelah memberikan damage
+                }
+            }
+        }
     }
 
     void Patrol()
@@ -83,15 +103,46 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    // Tambahkan interaksi saat menyentuh player
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Ketika musuh mulai bersentuhan dengan player
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collider.CompareTag("Player"))
         {
-            if (playerHealth != null)
+            // Ketika player bersentuhan dengan musuh, set flag isPlayerInRange ke true
+            isPlayerInRange = true;
+            damageTimer = 0f; // Reset timer ketika player masuk ke jangkauan
+        }
+    }
+
+    // Ketika player tetap berada dalam trigger
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Player"))
+        {
+            // Musuh sudah di dalam range player dan akan memberi damage setelah interval
+            if (isPlayerInRange)
             {
-                playerHealth.TakeDamage(2); // Kurangi health player sebanyak 2
+                damageTimer += Time.deltaTime;
+                if (damageTimer >= damageInterval)
+                {
+                    if (playerHealth != null)
+                    {
+                        playerHealth.TakeDamage(2); // Kurangi health player sebanyak 1
+                        damageTimer = 0f; // Reset timer
+                    }
+                }
             }
+        }
+    }
+
+    // Ketika player keluar dari jangkauan musuh
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Player"))
+        {
+            // Set flag isPlayerInRange ke false jika player keluar dari jangkauan
+            isPlayerInRange = false;
+            damageTimer = 0f; // Reset timer jika player keluar dari jangkauan
         }
     }
 }

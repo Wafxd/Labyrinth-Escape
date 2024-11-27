@@ -15,8 +15,8 @@ TagManager:
   - UI
   - BG
   - Teembok
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
     locked: 0
   - name: Map
     uniqueID: 3544382895
+    locked: 0
+  - name: enemy
+    uniqueID: 3486382563
     locked: 0
   - name: Player
     uniqueID: 245810397
