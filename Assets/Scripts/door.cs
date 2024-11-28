@@ -41,7 +41,7 @@ public class Door : MonoBehaviour
             // Jika pemain sudah di level 10 dan membuka pintu
             if (currentSceneIndex == 11)  // Cek jika pemain sudah di level 10
             {
-                ResetProgressAndGoToMainMenu(); // Reset progres dan pergi ke Main Menu
+                GoToTamatScene(); // Pergi ke scene tamat
             }
             else if (currentSceneIndex < SceneManager.sceneCountInBuildSettings - 1) // Cek apakah belum di level terakhir
             {
@@ -96,12 +96,9 @@ public class Door : MonoBehaviour
         }
     }
 
-    void ResetProgressAndGoToMainMenu()
+    void GoToTamatScene()
     {
-        // Reset level progress agar hanya level 1 yang terbuka
-        PlayerPrefs.SetInt("levelat", 1);  // Set level yang bisa diakses ke 1
-
-        // Kembali ke Main Menu setelah reset level
-        SceneManager.LoadScene("Main Menu"); // Ganti dengan nama scene Main Menu
+        // Jika sudah di level 10, langsung pergi ke scene Tamat
+        SceneManager.LoadScene("TamatScene"); // Ganti dengan nama scene tamat yang sesuai
     }
 }
