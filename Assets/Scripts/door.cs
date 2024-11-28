@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Video;
 
 public class Door : MonoBehaviour
 {
@@ -8,7 +7,6 @@ public class Door : MonoBehaviour
     private Animator anim;
 
     [SerializeField] GameObject player;
-    [SerializeField] VideoPlayer videoPlayer;  // VideoPlayer untuk memutar video tamat
     [SerializeField] PlayerMovement playerMovement;  // Referensi ke script PlayerMovement
 
     public AudioSource openDoorSFX;  // Suara pintu terbuka
@@ -18,12 +16,6 @@ public class Door : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         locked = true;
-
-        // Pastikan videoPlayer di-set, jika tidak maka bisa muncul error
-        if (videoPlayer == null)
-        {
-            Debug.LogError("VideoPlayer belum di-assign pada inspector.");
-        }
 
         // Cek apakah player memiliki PlayerMovement
         if (playerMovement == null)
@@ -46,9 +38,10 @@ public class Door : MonoBehaviour
             // Perbarui progres level sebelum memuat level berikutnya
             UpdateLevelProgress(currentSceneIndex);
 
+            // Jika pemain sudah di level 10 dan membuka pintu
             if (currentSceneIndex == 11)  // Cek jika pemain sudah di level 10
             {
-                PlayEndVideo(); // Mainkan video tamat
+                ResetProgressAndGoToMainMenu(); // Reset progres dan pergi ke Main Menu
             }
             else if (currentSceneIndex < SceneManager.sceneCountInBuildSettings - 1) // Cek apakah belum di level terakhir
             {
@@ -103,51 +96,12 @@ public class Door : MonoBehaviour
         }
     }
 
-    void PlayEndVideo()
+    void ResetProgressAndGoToMainMenu()
     {
-        // Pastikan videoPlayer sudah ada dan video sudah di-assign
-        if (videoPlayer != null)
-        {
-            videoPlayer.Play(); // Mainkan video tamat
+        // Reset level progress agar hanya level 1 yang terbuka
+        PlayerPrefs.SetInt("levelat", 1);  // Set level yang bisa diakses ke 1
 
-            // Nonaktifkan player movement dan interaksi saat video diputar
-            DisablePlayerMovement();
-
-            // Setelah video selesai, bisa menampilkan Main Menu atau tindakan lain
-            videoPlayer.loopPointReached += EndOfVideo; // Memanggil method ketika video selesai
-        }
-    }
-
-    void EndOfVideo(VideoPlayer vp)
-    {
-        // Setelah video selesai, kembali ke Main Menu atau scene lain
-        SceneManager.LoadScene("Main Menu"); // Ganti dengan nama scene Main Menu yang sesuai
-
-        // Mengaktifkan kembali kontrol player setelah video selesai
-        EnablePlayerMovement();
-    }
-
-    void DisablePlayerMovement()
-    {
-        // Menonaktifkan kontrol pergerakan player
-        if (playerMovement != null)
-        {
-            playerMovement.enabled = false;
-        }
-
-        // Nonaktifkan collider player agar tidak bisa berinteraksi
-        player.GetComponent<Collider2D>().enabled = false;
-    }
-
-    void EnablePlayerMovement()
-    {
-        // Mengaktifkan kembali kontrol pergerakan player
-        if (playerMovement != null)
-        {
-            playerMovement.enabled = true;
-        }
-
-        // Mengaktifkan kembali collider player
-        player.GetComponent<Collider2D>().enabled = true;
+        // Kembali ke Main Menu setelah reset level
+        SceneManager.LoadScene("Main Menu"); // Ganti dengan nama scene Main Menu
     }
 }
