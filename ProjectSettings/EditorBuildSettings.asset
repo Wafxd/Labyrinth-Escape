@@ -44,6 +44,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transisi/tamat.unity
     guid: 9c307dabe314f2a41a896e0838138271
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Walk.unity
+    guid: 5ea0b29913383b04794a2e44d1dcdd76
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Grab n drop.unity
+    guid: 043ba94456276794d94f0d7f07ce5e24
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Open Door.unity
+    guid: de1610f7b9149384aa5a50f997978cb6
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Heal.unity
+    guid: ed54ab38b35e33042b4795673fbc14ff
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
