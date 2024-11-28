@@ -31,6 +31,22 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void RestoreHealth(int amount)
+    {
+        if (isPlayerAlive) // Cek jika player masih hidup
+        {
+            currentHealth += amount;
+            currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // Pastikan darah tidak melebihi maksimum
+            healthBar.SetHealth(currentHealth); // Update UI HealthBar
+        }
+    }
+
+    // Tambahkan fungsi untuk mendapatkan darah saat ini
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
     private void Die()
     {
         isPlayerAlive = false; // Menandakan player sudah mati
