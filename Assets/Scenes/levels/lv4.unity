@@ -28875,6 +28875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locked: 0
   player: {fileID: 1773123566}
+  playerMovement: {fileID: 0}
   openDoorSFX: {fileID: 1485755563}
   closeDoorSFX: {fileID: 828197359}
 --- !u!61 &1749417996
@@ -29104,7 +29105,7 @@ MonoBehaviour:
   speed: 10
   footstepAudio: {fileID: 1417793834}
   audioManager: {fileID: 659021723}
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 1773123574}
 --- !u!50 &1773123571
 Rigidbody2D:
   serializedVersion: 5

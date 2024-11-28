@@ -54974,7 +54974,7 @@ MonoBehaviour:
   speed: 10
   footstepAudio: {fileID: 1497073446}
   audioManager: {fileID: 1569098767}
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 1349665675}
 --- !u!50 &1349665672
 Rigidbody2D:
   serializedVersion: 5
@@ -66894,7 +66894,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000affd42d39105a884ddc4a60e3181f357cddf2a67
+  m_ApplyToSortingLayers: 000000009105a884affd42d3e3f9cdcfddc4a60e3181f357cddf2a67
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -68203,6 +68203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locked: 0
   player: {fileID: 1349665667}
+  playerMovement: {fileID: 0}
   openDoorSFX: {fileID: 1732840172}
   closeDoorSFX: {fileID: 601671190}
 --- !u!61 &1872481230
