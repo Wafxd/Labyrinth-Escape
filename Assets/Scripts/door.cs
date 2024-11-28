@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
 
     [SerializeField] GameObject player;
     [SerializeField] VideoPlayer videoPlayer;  // VideoPlayer untuk memutar video tamat
+    [SerializeField] PlayerMovement playerMovement;  // Referensi ke script PlayerMovement
 
     public AudioSource openDoorSFX;  // Suara pintu terbuka
     public AudioSource closeDoorSFX; // Suara pintu tertutup
@@ -22,6 +23,16 @@ public class Door : MonoBehaviour
         if (videoPlayer == null)
         {
             Debug.LogError("VideoPlayer belum di-assign pada inspector.");
+        }
+
+        // Cek apakah player memiliki PlayerMovement
+        if (playerMovement == null)
+        {
+            playerMovement = player.GetComponent<PlayerMovement>();
+            if (playerMovement == null)
+            {
+                Debug.LogError("PlayerMovement script tidak ditemukan pada player.");
+            }
         }
     }
 
@@ -99,6 +110,9 @@ public class Door : MonoBehaviour
         {
             videoPlayer.Play(); // Mainkan video tamat
 
+            // Nonaktifkan player movement dan interaksi saat video diputar
+            DisablePlayerMovement();
+
             // Setelah video selesai, bisa menampilkan Main Menu atau tindakan lain
             videoPlayer.loopPointReached += EndOfVideo; // Memanggil method ketika video selesai
         }
@@ -108,5 +122,32 @@ public class Door : MonoBehaviour
     {
         // Setelah video selesai, kembali ke Main Menu atau scene lain
         SceneManager.LoadScene("Main Menu"); // Ganti dengan nama scene Main Menu yang sesuai
+
+        // Mengaktifkan kembali kontrol player setelah video selesai
+        EnablePlayerMovement();
+    }
+
+    void DisablePlayerMovement()
+    {
+        // Menonaktifkan kontrol pergerakan player
+        if (playerMovement != null)
+        {
+            playerMovement.enabled = false;
+        }
+
+        // Nonaktifkan collider player agar tidak bisa berinteraksi
+        player.GetComponent<Collider2D>().enabled = false;
+    }
+
+    void EnablePlayerMovement()
+    {
+        // Mengaktifkan kembali kontrol pergerakan player
+        if (playerMovement != null)
+        {
+            playerMovement.enabled = true;
+        }
+
+        // Mengaktifkan kembali collider player
+        player.GetComponent<Collider2D>().enabled = true;
     }
 }
