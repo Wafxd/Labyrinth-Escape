@@ -5244,7 +5244,7 @@ GameObject:
   - component: {fileID: 787330934}
   - component: {fileID: 787330935}
   m_Layer: 0
-  m_Name: Light 2D
+  m_Name: Light Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20507,7 +20507,7 @@ GameObject:
   - component: {fileID: 1824295682}
   - component: {fileID: 1824295683}
   m_Layer: 0
-  m_Name: Light 2D
+  m_Name: Light Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
