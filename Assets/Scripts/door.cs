@@ -99,6 +99,6 @@ public class Door : MonoBehaviour
     void GoToTamatScene()
     {
         // Jika sudah di level 10, langsung pergi ke scene Tamat
-        SceneManager.LoadScene("TamatScene"); // Ganti dengan nama scene tamat yang sesuai
+        SceneManager.LoadScene("tamat"); // Ganti dengan nama scene tamat yang sesuai
     }
 }
