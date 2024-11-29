@@ -18,4 +18,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Map Level"); // Pastikan nama scene sesuai dengan yang ada di build settings
     }
+
+
+    public void Playtutor(string levelName)
+    {
+        SceneManager.LoadSceneAsync(levelName); // Memuat scene sesuai dengan nama level
+    }
 }

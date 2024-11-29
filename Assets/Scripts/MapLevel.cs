@@ -14,4 +14,9 @@ public class MapLevel : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Main Menu"); // Memuat scene Main Menu
     }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadSceneAsync("Menu Tutor"); // Memuat scene Main Menu
+    }
 }
