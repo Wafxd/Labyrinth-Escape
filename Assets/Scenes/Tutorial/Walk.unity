@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 401692078}
   - component: {fileID: 401692077}
   m_Layer: 5
-  m_Name: restart
+  m_Name: replay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2114421204646940291, guid: 990ad78f8104bd9498942d846915ac96, type: 3}
+  m_Sprite: {fileID: -1519801870010930421, guid: e97942b7cb9a8344ab8245d1d86ea34b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -941,7 +941,7 @@ GameObject:
   - component: {fileID: 1101608997}
   - component: {fileID: 1101608996}
   m_Layer: 5
-  m_Name: Resume
+  m_Name: Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -901449388871593281, guid: efd08b7e3cb48684baea35ca99897e27, type: 3}
+  m_Sprite: {fileID: 4595528163155363991, guid: f49c265b3fd56f74f8e456841fef2cf4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1104,7 +1104,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296845497}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 2d507eed41bb5b04dadc55dd3adfbc46, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 573ff1c9f5721de4fa688cd0dcdd631a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 181575980}
@@ -1277,7 +1277,7 @@ GameObject:
   - component: {fileID: 1559252690}
   - component: {fileID: 1559252689}
   m_Layer: 5
-  m_Name: restart
+  m_Name: replay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2114421204646940291, guid: 990ad78f8104bd9498942d846915ac96, type: 3}
+  m_Sprite: {fileID: -1519801870010930421, guid: e97942b7cb9a8344ab8245d1d86ea34b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
