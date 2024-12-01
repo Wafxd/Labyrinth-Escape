@@ -57,6 +57,6 @@ public class EndOfVideo : MonoBehaviour
     public void ExitToMainMenu()
     {
         Time.timeScale = 1; // Pastikan waktu kembali normal sebelum berpindah scene
-        SceneManager.LoadScene("Map Level"); // Ganti dengan nama scene Main Menu
+        SceneManager.LoadScene("Menu Tutor"); // Ganti dengan nama scene Main Menu
     }
 }

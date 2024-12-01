@@ -10,19 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 15003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: New Windows Profile
+  m_Name: coba1
   m_EditorClassIdentifier: 
   m_AssetVersion: 1
   m_BuildTarget: 19
   m_Subtarget: 2
   m_PlatformId: 4e3c793746204150860bf175a9a41a05
   m_PlatformBuildProfile:
-    rid: 4327353936714399958
-  m_OverrideGlobalSceneList: 0
-  m_Scenes: []
-  m_ScriptingDefines:
-  - 
-  - 
+    rid: 4327353936714399744
+  m_OverrideGlobalSceneList: 1
+  m_Scenes:
+  - m_enabled: 1
+    m_path: Assets/Scenes/Main Menu/Main Menu.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Main Menu/Map Level.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv1.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv2.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv3.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv4.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv5.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv6.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv7.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv8.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv9.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/levels/lv10.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Transisi/tamat.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Tutorial/Menu Tutor.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Tutorial/Walk.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Tutorial/Grab n drop.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Tutorial/Open Door.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Tutorial/Heal.unity
+  m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings:
     - line: '| PlayerSettings:'
@@ -36,8 +70,8 @@ MonoBehaviour:
     - line: '|   targetDevice: 2'
     - line: '|   useOnDemandResources: 0'
     - line: '|   accelerometerFrequency: 60'
-    - line: '|   companyName: DefaultCompany'
-    - line: '|   productName: My project'
+    - line: '|   companyName: RPLC'
+    - line: '|   productName: Labyrinth Escape'
     - line: '|   defaultCursor: {instanceID: 0}'
     - line: '|   cursorHotspot: {x: 0, y: 0}'
     - line: '|   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b:
@@ -122,8 +156,8 @@ MonoBehaviour:
     - line: '|   resizableWindow: 0'
     - line: '|   useMacAppStoreValidation: 0'
     - line: '|   macAppStoreCategory: public.app-category.games'
-    - line: '|   gpuSkinning: 0'
-    - line: '|   meshDeformation: 0'
+    - line: '|   gpuSkinning: 1'
+    - line: '|   meshDeformation: 1'
     - line: '|   xboxPIXTextureCapture: 0'
     - line: '|   xboxEnableAvatar: 0'
     - line: '|   xboxEnableKinect: 0'
@@ -717,7 +751,7 @@ MonoBehaviour:
     - line: '|   cloudProjectId: cbea99a5-08d2-4d36-b0c8-a62e71eca1d6'
     - line: '|   framebufferDepthMemorylessMode: 0'
     - line: '|   qualitySettingsNames: []'
-    - line: '|   projectName: My project'
+    - line: '|   projectName: Game Labirin'
     - line: '|   organizationId: farisjaguar2'
     - line: '|   cloudEnabled: 0'
     - line: '|   legacyClampBlendShapeWeights: 0'
@@ -731,7 +765,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4327353936714399958
+    - rid: 4327353936714399744
       type: {class: WindowsPlatformSettings, ns: UnityEditor.WindowsStandalone, asm: UnityEditor.WindowsStandalone.Extensions}
       data:
         m_Development: 0
