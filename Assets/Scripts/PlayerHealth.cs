@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public HealthBar healthBar; // Drag and drop HealthBar dari Editor
-    public int maxHealth = 10;
+    public int maxHealth = 5;
     private int currentHealth;
 
     // Referensi ke DeathMenuController
