@@ -61,5 +61,8 @@ TagManager:
   - name: key
     uniqueID: 1730863053
     locked: 0
+  - name: vid
+    uniqueID: 4275442517
+    locked: 0
   m_RenderingLayers:
   - Default
