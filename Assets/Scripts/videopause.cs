@@ -1,17 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Video;  // Tambahkan untuk mengakses VideoPlayer
+using UnityEngine.Video;  
 
 public class videopause : MonoBehaviour
 {
     public GameObject PausePanel;
-    public VideoPlayer videoPlayer;  // Referensi ke VideoPlayer yang memutar video
+    public VideoPlayer videoPlayer;  
 
     public void Pause()
     {
         PausePanel.SetActive(true);
-        Time.timeScale = 0; // Pause waktu
-        if (videoPlayer.isPlaying) // Pastikan video dipause jika sedang diputar
+        Time.timeScale = 0; 
+        if (videoPlayer.isPlaying) 
         {
             videoPlayer.Pause();
         }
@@ -20,8 +20,8 @@ public class videopause : MonoBehaviour
     public void Resume()
     {
         PausePanel.SetActive(false);
-        Time.timeScale = 1; // Lanjutkan waktu
-        if (!videoPlayer.isPlaying) // Pastikan video dilanjutkan jika tidak sedang diputar
+        Time.timeScale = 1; 
+        if (!videoPlayer.isPlaying) 
         {
             videoPlayer.Play();
         }
@@ -29,13 +29,13 @@ public class videopause : MonoBehaviour
 
     public void Restart()
     {
-        Time.timeScale = 1; // Pastikan waktu kembali normal sebelum restart
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Muat ulang scene saat ini
+        Time.timeScale = 1; 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
     public void ExitToMainMenu()
     {
-        Time.timeScale = 1; // Pastikan waktu kembali normal sebelum berpindah scene
-        SceneManager.LoadScene("Map Level"); // Muat scene Map Level
+        Time.timeScale = 1; 
+        SceneManager.LoadScene("Map Level"); 
     }
 }

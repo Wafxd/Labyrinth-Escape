@@ -22,6 +22,6 @@ public class MainMenu : MonoBehaviour
 
     public void Playtutor(string levelName)
     {
-        SceneManager.LoadSceneAsync(levelName); // Memuat scene sesuai dengan nama level
+        SceneManager.LoadSceneAsync(levelName); 
     }
 }
