@@ -45,8 +45,6 @@ public class PlayerMovement : MonoBehaviour
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
         );
-
-        // Mainkan suara langkah kaki saat player bergerak
         if (footstepAudio != null)
         {
             if (inputMovement.magnitude > 0 && !footstepAudio.isPlaying)
@@ -58,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
                 footstepAudio.Stop();
             }
 
-            // Sinkronkan volume langkah kaki dengan volume SFX
             if (audioManager != null)
             {
                 footstepAudio.volume = audioManager.GetSFXVolume();
