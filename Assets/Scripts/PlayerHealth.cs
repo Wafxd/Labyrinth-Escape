@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (isPlayerAlive) // Cek jika player masih hidup sebelum mengambil damage
+        if (isPlayerAlive) 
         {
             currentHealth -= damage;
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
@@ -33,11 +33,11 @@ public class PlayerHealth : MonoBehaviour
 
     public void RestoreHealth(int amount)
     {
-        if (isPlayerAlive) // Cek jika player masih hidup
+        if (isPlayerAlive) 
         {
             currentHealth += amount;
-            currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // Pastikan darah tidak melebihi maksimum
-            healthBar.SetHealth(currentHealth); // Update UI HealthBar
+            currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); 
+            healthBar.SetHealth(currentHealth); 
         }
     }
 
@@ -49,10 +49,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        isPlayerAlive = false; // Menandakan player sudah mati
+        isPlayerAlive = false; 
         if (deathMenuController != null)
         {
-            deathMenuController.ShowDeathMenu(); // Tampilkan Death Menu
+            deathMenuController.ShowDeathMenu(); 
         }
         else
         {

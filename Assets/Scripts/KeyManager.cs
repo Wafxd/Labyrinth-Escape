@@ -24,8 +24,6 @@ public class KeyManager : MonoBehaviour
         {
             Vector3 offset = new Vector3(-0.5f, 0.5f, 0);
             transform.position = Vector2.SmoothDamp(transform.position, player.transform.position + offset, ref vel, smoothTime);
-
-            // Drop key jika tombol "G" ditekan
             if (Input.GetKeyDown(KeyCode.G))
             {
                 DropKey();
@@ -33,7 +31,6 @@ public class KeyManager : MonoBehaviour
         }
         else
         {
-            // Memeriksa jika player cukup dekat untuk mengambil kunci
             float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
             if (distanceToPlayer <= pickupRange)
             {
@@ -44,7 +41,6 @@ public class KeyManager : MonoBehaviour
                 canPickUp = false;
             }
 
-            // Ambil kunci jika tombol "E" ditekan
             if (canPickUp && Input.GetKeyDown(KeyCode.E))
             {
                 PickUpKey();

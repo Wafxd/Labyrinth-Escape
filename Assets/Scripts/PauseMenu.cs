@@ -8,24 +8,21 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         PausePanel.SetActive(true);
-        Time.timeScale = 0; // Pause waktu
+        Time.timeScale = 0; 
     }
-
     public void Resume()
     {
         PausePanel.SetActive(false);
-        Time.timeScale = 1; // Lanjutkan waktu
+        Time.timeScale = 1; 
     }
-
     public void Restart()
     {
-        Time.timeScale = 1; // Pastikan waktu kembali normal sebelum restart
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Muat ulang scene saat ini
+        Time.timeScale = 1; 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
-
     public void ExitToMainMenu()
     {
-        Time.timeScale = 1; // Pastikan waktu kembali normal sebelum berpindah scene
-        SceneManager.LoadScene("Map Level"); // Muat scene Map Level
+        Time.timeScale = 1; 
+        SceneManager.LoadScene("Map Level"); 
     }
 }

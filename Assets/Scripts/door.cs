@@ -35,21 +35,19 @@ public class Door : MonoBehaviour
 
         if (!locked && distance < 0.5f)
         {
-            // Perbarui progres level sebelum memuat level berikutnya
             UpdateLevelProgress(currentSceneIndex);
 
-            // Jika pemain sudah di level 10 dan membuka pintu
-            if (currentSceneIndex == 11)  // Cek jika pemain sudah di level 10
+            if (currentSceneIndex == 11)  
             {
-                GoToTamatScene(); // Pergi ke scene tamat
+                GoToTamatScene(); 
             }
-            else if (currentSceneIndex < SceneManager.sceneCountInBuildSettings - 1) // Cek apakah belum di level terakhir
+            else if (currentSceneIndex < SceneManager.sceneCountInBuildSettings - 1) 
             {
-                SceneManager.LoadScene(currentSceneIndex + 1); // Load scene berikutnya
+                SceneManager.LoadScene(currentSceneIndex + 1); 
             }
             else
             {
-                SceneManager.LoadScene("Main Menu"); // Ganti dengan nama scene main menu
+                SceneManager.LoadScene("Main Menu"); 
             }
         }
     }
@@ -98,7 +96,6 @@ public class Door : MonoBehaviour
 
     void GoToTamatScene()
     {
-        // Jika sudah di level 10, langsung pergi ke scene Tamat
-        SceneManager.LoadScene("tamat"); // Ganti dengan nama scene tamat yang sesuai
+        SceneManager.LoadScene("tamat"); 
     }
 }

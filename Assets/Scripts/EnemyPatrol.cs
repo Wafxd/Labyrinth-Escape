@@ -47,16 +47,12 @@ public class EnemyBehavior : MonoBehaviour
 
     void Update()
     {
-        // Mengecek jarak musuh dengan player
         float distanceToPlayer = Vector3.Distance(transform.position, Player.position);
 
         if (distanceToPlayer <= detectionRange)
         {
-            // Mulai mengejar pemain jika dalam jangkauan
             isChasing = true;
             agent.SetDestination(Player.position);
-
-            // Mainkan musik tegang
             if (audioManager != null)
             {
                 audioManager.PlayTensionMusic(true);
@@ -64,18 +60,14 @@ public class EnemyBehavior : MonoBehaviour
         }
         else
         {
-            // Kembali ke patroli jika pemain di luar jangkauan
             isChasing = false;
             Patrol();
-
-            // Hentikan musik tegang
             if (audioManager != null)
             {
                 audioManager.PlayTensionMusic(false);
             }
         }
 
-        // Jika player sudah dalam jangkauan musuh, beri damage setelah interval waktu
         if (isPlayerInRange)
         {
             damageTimer += Time.deltaTime;
@@ -83,8 +75,8 @@ public class EnemyBehavior : MonoBehaviour
             {
                 if (playerHealth != null)
                 {
-                    playerHealth.TakeDamage(1); // Kurangi health player sebanyak 1
-                    damageTimer = 0f; // Reset timer setelah memberikan damage
+                    playerHealth.TakeDamage(1); 
+                    damageTimer = 0f; 
                 }
             }
         }
@@ -114,12 +106,10 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    // Ketika player tetap berada dalam trigger
     private void OnTriggerStay2D(Collider2D collider)
     {
         if (collider.CompareTag("Player"))
         {
-            // Musuh sudah di dalam range player dan akan memberi damage setelah interval
             if (isPlayerInRange)
             {
                 damageTimer += Time.deltaTime;
@@ -127,8 +117,8 @@ public class EnemyBehavior : MonoBehaviour
                 {
                     if (playerHealth != null)
                     {
-                        playerHealth.TakeDamage(2); // Kurangi health player sebanyak 1
-                        damageTimer = 0f; // Reset timer
+                        playerHealth.TakeDamage(1); 
+                        damageTimer = 0f; 
                     }
                 }
             }

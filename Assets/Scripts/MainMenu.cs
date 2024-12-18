@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
 
     public void LoadMapLevel()
     {
-        SceneManager.LoadSceneAsync("Map Level"); // Pastikan nama scene sesuai dengan yang ada di build settings
+        SceneManager.LoadSceneAsync("Map Level"); 
     }
 
 
